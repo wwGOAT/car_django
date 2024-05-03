@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzum Market - Moshinalar</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Uzum Market card style */
+        .uzum-market-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 60px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        }
+        .uzum-market-card .card-img-top {
+            border-radius: 15px 15px 0 0;
+        }
+        .uzum-market-card .card-body {
+            border-radius: 0 0 15px 15px;
+        }
+    </style>
+</head>
+<body>
+<style>
+  .search-container {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+  }
+
+  .search-container input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.4s ease-in-out;
+  }
+
+  .search-container input[type=text]:focus {
+    width: 300px;
+  }
+
+  .search-container button {
+    float: right;
+    padding: 10px 20px;
+    background: darkslategrey;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .search-container button:hover {
+    background: white;
+    color: darkslategrey;
+  }
+</style>
+<div class="search-container">
+  <form action="/search" method="get">
+    <input type="text" placeholder="Search..." name="query">
+    <button type="submit">Search</button>
+  </form>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Car Market</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 10px">
+    <ul class="navbar-nav">
+      <li class="nav-item active" style="margin-left: 10px">
+        <a class="nav-link" href="#">All <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" style="margin-left: 10px">
+        <a class="nav-link" href="#">BMW</a>
+      </li>
+      <li class="nav-item" style="margin-left: 10px">
+        <a class="nav-link" href="#">Mers</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cars
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card uzum-market-card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">BMW</h5>
+                    <p class="card-text">BMW BMW BMW BMW BMW BMW BMW BMW BMW BMW BMW BMW BMW</p>
+                    <a href="#" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card uzum-market-card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota</h5>
+                    <p class="card-text">Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota Toyota</p>
+                    <a href="#" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card uzum-market-card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Mercedes</h5>
+                    <p class="card-text">Mercedes Mercedes Mercedes Mercedes Mercedes Mercedes Mercedes Mercedes</p>
+                    <a href="#" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card uzum-market-card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Audi</h5>
+                    <p class="card-text">Audi Audi Audi Audi Audi Audi Audi Audi Audi Audi Audi Audi Audi Audi Audi Audi</p>
+                    <a href="#" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card uzum-market-card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Ferrari</h5>
+                    <p class="card-text">Ferrari Ferrari Ferrari Ferrari Ferrari Ferrari Ferrari Ferrari Ferrari Ferrari Ferrari Ferrari Ferrari</p>
+                    <a href="#" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card uzum-market-card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lamborghini</h5>
+                    <p class="card-text">Lamborghini Lamborghini Lamborghini Lamborghini Lamborghini Lamborghini</p>
+                    <a href="#" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card uzum-market-card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Porsche</h5>
+                    <p class="card-text">Porsche Porsche Porsche Porsche Porsche Porsche Porsche Porsche Porsche Porsche Porsche Porsche</p>
+                    <a href="#" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card uzum-market-card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Jaguar</h5>
+                    <p class="card-text">Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar Jaguar</p>
+                    <a href="#" class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"></script>
+</body>
+</html>
